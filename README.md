@@ -1,8 +1,15 @@
 # CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal
 
 <p align="center">
-  <img src="assets/demo_videos/english1_demo.mp4" width="80%"/>
+  <a href="assets/demo_videos/english1_demo.mp4">
+    <img src="assets/demo_videos/english1_demo.gif" width="80%"/>
+  </a>
 </p>
+
+<p align="center">
+  ▶ Click to watch the full-resolution MP4
+</p>
+
 
 ## 📋 Overview
 
