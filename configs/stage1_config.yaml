@@ -1,0 +1,155 @@
+# ================================================================
+# CLEAR Stage I: Self-Supervised Prior Learning Configuration
+#
+# Trains dual encoders with disentangled feature learning:
+# - E_sub: Subtitle encoder (ResNet-50)
+# - E_content: Content encoder (ResNet-50)
+#
+# Loss: L_stage1 = L_ortho + 0.5*L_adv + L_region + 0.1*L_recon
+#
+# Reference: Section 3.2 in the CLEAR paper
+# ================================================================
+
+# ========== Encoder Configuration ==========
+adapter:
+  enabled: true
+  stage: "stage1"
+  method: "disentangled"  # Disentangled feature learning
+  
+  # Architecture
+  backbone: "resnet50"  # Dual ResNet-50 encoders
+  encoder_output_dim: 512
+  
+  # Multi-scale FPN fusion (for small subtitle detection)
+  use_multiscale: true
+  fusion_layer: 'layer2'  # 8x downsampling, balance detail and semantics
+  
+  # Disentangled feature dimensions
+  content_dim: 256  # F^content dimension
+  subtitle_dim: 256  # F^sub dimension
+  use_reconstruction: true  # Enable L_recon
+  
+  # Loss weights (Eq. 11 in paper)
+  # L_stage1 = L_ortho + 0.5*L_adv + L_region + 0.1*L_recon
+  use_adaptive_loss_weights: true  # Uncertainty-based adaptive weighting
+  mask_loss_weight: 2.0      # L_region weight
+  disentangle_loss_weight: 0.5  # L_ortho + L_adv weight
+  reconstruction_loss_weight: 0.3  # L_recon weight
+  
+  # Pseudo-label generation
+  # threshold = μ + σ (Eq. 2 in paper)
+  diff_threshold: 1.0  # Number of std deviations
+  min_diff_threshold: 0.0012  # Minimum difference for valid frames
+  
+  # Pretrained backbone
+  use_pretrained_backbone: true
+  backbone_weight_path: null  # Set to local path if needed
+
+# ========== Data Configuration ==========
+data:
+  # Video pair directories (MODIFY THESE)
+  clean_dirs:
+    - "/path/to/clean_videos"
+  subtitle_dirs:
+    - "/path/to/subtitle_videos"
+  
+  # Sample filter file (optional)
+  sample_filter_file: null
+  
+  # Dataset split
+  val_ratio: 0.1
+  random_seed: 43
+  max_samples: null  # Use all available data
+  
+  # Frame sampling
+  num_frames: 1  # Stage I uses single frames
+  auto_num_frames: false
+  frames_per_video: 20  # Sample 20 frames per video
+  
+  # Resolution (auto-adaptive for portrait/landscape)
+  target_height: 720
+  target_width: 1280
+  filter_orientation: null
+  
+  # Data augmentation
+  augmentation:
+    enabled: true
+    random_crop: false
+    random_horizontal_flip: false
+    color_jitter: true
+    brightness: 0.05
+    contrast: 0.05
+    saturation: 0.05
+    hue: 0.02
+  
+  first_frame_conditioning_prob: 0.0
+  enable_mask_generation: false
+  fixed_prompt: ""
+  cache_videos: false
+  save_filter_samples: false
+
+# ========== Training Configuration ==========
+training:
+  num_gpus: 8
+  distributed: true
+  backend: "nccl"
+  
+  batch_size_per_gpu: 1
+  gradient_accumulation_steps: 4
+  # Effective batch size: ~frames_per_video * 4 * 8 GPUs
+  
+  optimizer: "adamw"
+  learning_rate: 1.0e-5
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  
+  lr_scheduler: "cosine"
+  warmup_steps: 500
+  min_lr_ratio: 0.01
+  
+  max_epochs: 1
+  max_steps: null
+  
+  mixed_precision: "bf16"
+  max_grad_norm: 1.0
+  
+  num_workers: 2
+  pin_memory: false
+  prefetch_factor: 2
+
+# ========== Logging ==========
+logging:
+  project_name: "CLEAR-Stage1"
+  experiment_name: "prior_learning"
+  use_wandb: false
+  use_tensorboard: true
+  log_dir: "./logs"
+  log_interval: 10
+  image_log_interval: 50
+  log_feature_stats: true
+  log_accuracy: true
+
+# ========== Checkpoint ==========
+checkpoint:
+  save_dir: "./checkpoints/stage1"
+  save_interval: 50
+  keep_last_n: 10
+  save_optimizer: true
+  resume_from: null
+
+# ========== Validation ==========
+validation:
+  enabled: true
+  val_interval: 50
+  num_val_samples: 50
+  compute_accuracy: true
+  compute_feature_distance: true
+  visualize_embeddings: false
+
+# ========== Hardware ==========
+hardware:
+  use_deepspeed: false
+  cuda_deterministic: false
+  benchmark: true
+  find_unused_parameters: false
