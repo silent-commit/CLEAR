@@ -237,13 +237,8 @@ CLEAR consists of two training stages and a mask-free inference pipeline:
 
 If you find CLEAR useful for your research, please cite:
 
-```bibtex
-@inproceedings{clear2026,
-  title={CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal},
-  author={He, Qingdong and Wang, Chaoyi and Tang, Peng and Yang, Yifan and Hu, Xiaobin},
-  booktitle={Proceedings of the 43rd International Conference on Machine Learning (ICML)},
-  year={2026}
-}
+```
+CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal
 ```
 
 ## 📧 Contact
