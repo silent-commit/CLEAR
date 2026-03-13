@@ -96,13 +96,21 @@ pip install "huggingface_hub[cli]"
 huggingface-cli download Wan-AI/Wan2.1-T2V-1.3B --local-dir ./models/Wan2.1-T2V-1.3B
 ```
 
-### Install CLEAR
+4. **Download CLEAR Model Weights**:
+```bash
+huggingface-cli download charlesw09/CLEAR-mask-free-video-subtitle-removal \
+    CLEAR-mask-free-subtitle-removal.pt \
+    --local-dir ./checkpoints
+```
 
+### Install CLEAR
 ```bash
 git clone https://github.com/your-repo/CLEAR.git
 cd CLEAR
 pip install -r requirements.txt
 ```
+
+> ✅ After installation, your `checkpoints/` folder should contain `CLEAR-mask-free-subtitle-removal.pt`.
 
 ## 📁 Project Structure
 
@@ -138,7 +146,7 @@ CLEAR/
 ├── inference.py                  # End-to-End Mask-Free Inference
 │
 ├── checkpoints/                  # Model checkpoints (download separately)
-│   └── clear_lora.pt            # Pre-trained CLEAR LoRA weights
+│   └── CLEAR-mask-free-subtitle-removal.pt            # Pre-trained CLEAR LoRA weights
 │
 └── assets/
     └── demo_videos/              # Demo comparison videos
@@ -158,7 +166,7 @@ The simplest way to use CLEAR — just provide a video with subtitles:
 ```bash
 # Set model paths
 export MODEL_BASE_PATH=/path/to/Wan2.1-Fun-V1.1-1.3B-Control
-export LORA_CHECKPOINT=./checkpoints/clear_lora.pt
+export LORA_CHECKPOINT=./checkpoints/CLEAR-mask-free-subtitle-removal.pt
 
 # Run inference
 bash scripts/inference.sh input_video.mp4 ./results
@@ -169,7 +177,7 @@ Or use Python directly:
 ```python
 python inference.py \
     --model_base_path /path/to/Wan2.1-Fun-V1.1-1.3B-Control \
-    --lora_checkpoint ./checkpoints/clear_lora.pt \
+    --lora_checkpoint ./checkpoints/CLEAR-mask-free-subtitle-removal.pt \
     --lora_rank 64 \
     --lora_scale 1.0 \
     --input_video input_video.mp4 \
