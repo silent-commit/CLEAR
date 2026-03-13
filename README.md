@@ -1,6 +1,10 @@
 # CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal
 
 <p align="center">
+  <a href="https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal"><img src="https://img.shields.io/badge/🤗 HuggingFace-Model-yellow"/></a>
+</p>
+
+<p align="center">
   <a href="assets/demo_videos/english1_demo.mp4">
     <img src="assets/demo_videos/english1_demo.gif" width="80%"/>
   </a>
@@ -243,7 +247,7 @@ CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive V
 
 ## 📧 Contact
 
-- **Qingdong He** — [yingcaihe@tencent.com](mailto:yingcaihe@tencent.com) — [Google Scholar](https://scholar.google.com/citations?user=gUJWww0AAAAJ&hl=zh-CN)
+- **Qingdong He** — [heqingdong@alu.uestc.edu.cn](mailto:heqingdong@alu.uestc.edu.cn) — [Google Scholar](https://scholar.google.com/citations?user=gUJWww0AAAAJ&hl=zh-CN)
 - **Chaoyi Wang** — [chaoyiwang@mail.sim.ac.cn](mailto:chaoyiwang@mail.sim.ac.cn) — [Google Scholar](https://scholar.google.com/citations?user=e_wL1LsAAAAJ&hl=zh-CN)
 
 ## 🙏 Acknowledgements
