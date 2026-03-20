@@ -1,6 +1,27 @@
 # CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal
 
 <p align="center">
+  <b>Qingdong He*</b> · 
+  <b>Chaoyi Wang*</b> · 
+  Peng Tang · 
+  Yifan Yang · 
+  <a href="mailto:ben0xiaobin0hu1@nus.edu.sg"><b>Xiaobin Hu✉️</b></a>
+</p>
+
+<p align="center">
+  University of Electronic Science and Technology of China &nbsp;&nbsp;
+  University of Chinese Academy of Sciences &nbsp;&nbsp;
+  Technical University of Munich
+  <br>
+  Shanghai Jiao Tong University &nbsp;&nbsp;
+  National University of Singapore
+</p>
+
+<p align="center">
+  * Equal contribution &nbsp;&nbsp; ✉️ Corresponding author
+</p>
+
+<p align="center">
   <a href="https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal"><img src="https://img.shields.io/badge/🤗 HuggingFace-Model-yellow"/></a>
 </p>
 
