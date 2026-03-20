@@ -30,6 +30,10 @@
 </p>
 
 <p align="center">
+  💬 QQ Group: <code>1082514558</code>
+</p>
+
+<p align="center">
   <a href="assets/demo_videos/english1_demo.mp4">
     <img src="assets/demo_videos/english1_demo.gif" width="80%"/>
   </a>
