@@ -11,7 +11,11 @@
 </p>
 
 <p align="center">
-  ▶ Click to watch the full-resolution MP4
+  ▶ Click to watch the full-resolution MP4 <br>
+  💬 Join our community: 
+  <a href="https://qm.qq.com/q/j0QZUsjinu">
+    QQ Group (1082514558)
+  </a>
 </p>
 
 
