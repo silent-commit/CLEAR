@@ -11,7 +11,7 @@
 <p align="center">
   <sup>1</sup>University of Electronic Science and Technology of China &nbsp;&nbsp;
   <sup>2</sup>University of Chinese Academy of Sciences &nbsp;&nbsp;
-  <sup>3</sup>Technical University of Munich <br>
+  <sup>3</sup>Technical University of Munich &nbsp;&nbsp;
   <sup>4</sup>Shanghai Jiao Tong University &nbsp;&nbsp;
   <sup>5</sup>National University of Singapore
 </p>
@@ -21,7 +21,12 @@
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal"><img src="https://img.shields.io/badge/🤗 HuggingFace-Model-yellow"/></a>
+  <a href="https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal">
+    <img src="https://img.shields.io/badge/🤗 HuggingFace-Model-yellow"/>
+  </a>
+  <a href="https://qm.qq.com/q/j0QZUsjinu">
+    <img src="https://img.shields.io/badge/💬 QQ群-1082514558-blue"/>
+  </a>
 </p>
 
 <p align="center">
@@ -31,11 +36,7 @@
 </p>
 
 <p align="center">
-  ▶ Click to watch the full-resolution MP4 <br>
-  💬 Join our community: 
-  <a href="https://qm.qq.com/q/j0QZUsjinu">
-    QQ Group (1082514558)
-  </a>
+  ▶ Click to watch the full-resolution MP4
 </p>
 
 
