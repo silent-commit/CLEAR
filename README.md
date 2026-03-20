@@ -1,20 +1,19 @@
 # CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal
 
 <p align="center">
-  <b>Qingdong He*</b> · 
-  <b>Chaoyi Wang*</b> · 
-  Peng Tang · 
-  Yifan Yang · 
-  <a href="mailto:ben0xiaobin0hu1@nus.edu.sg"><b>Xiaobin Hu✉️</b></a>
+  <b>Qingdong He<sup>1</sup>*</b> · 
+  <b>Chaoyi Wang<sup>2</sup>*</b> · 
+  Peng Tang<sup>3</sup> · 
+  Yifan Yang<sup>4</sup> · 
+  <a href="mailto:ben0xiaobin0hu1@nus.edu.sg"><b>Xiaobin Hu<sup>5</sup>✉️</b></a>
 </p>
 
 <p align="center">
-  University of Electronic Science and Technology of China &nbsp;&nbsp;
-  University of Chinese Academy of Sciences &nbsp;&nbsp;
-  Technical University of Munich
-  <br>
-  Shanghai Jiao Tong University &nbsp;&nbsp;
-  National University of Singapore
+  <sup>1</sup>University of Electronic Science and Technology of China &nbsp;&nbsp;
+  <sup>2</sup>University of Chinese Academy of Sciences &nbsp;&nbsp;
+  <sup>3</sup>Technical University of Munich <br>
+  <sup>4</sup>Shanghai Jiao Tong University &nbsp;&nbsp;
+  <sup>5</sup>National University of Singapore
 </p>
 
 <p align="center">
