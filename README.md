@@ -21,6 +21,9 @@
 </p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2603.21901">
+    <img src="https://img.shields.io/badge/arXiv-2603.21901-b31b1b.svg"/>
+  </a>
   <a href="https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal">
     <img src="https://img.shields.io/badge/🤗 HuggingFace-Model-yellow"/>
   </a>
@@ -274,13 +277,20 @@ CLEAR consists of two training stages and a mask-free inference pipeline:
 - Adaptive weighting internalized into LoRA-augmented attention
 - Single-pass generation via DDIM sampling
 
-## 📝 Citation
+## Citation
 
-If you find CLEAR useful for your research, please cite:
+If you find this work helpful, please consider citing:
 
-```
-CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal
-```
+```bibtex
+@misc{he2026clearcontextawarelearningendtoend,
+      title={CLEAR: Context-Aware Learning with End-to-End Mask-Free Inference for Adaptive Video Subtitle Removal}, 
+      author={Qingdong He and Chaoyi Wang and Peng Tang and Yifan Yang and Xiaobin Hu},
+      year={2026},
+      eprint={2603.21901},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.21901}, 
+}
 
 ## 📧 Contact
 
