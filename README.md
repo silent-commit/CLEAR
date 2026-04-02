@@ -49,6 +49,7 @@
 ## 🔥 News
 
 - **[2026-04-02]** Added support for **CogVideoX**. See the implementation and usage details in [CLEAR-CogVideoX](https://github.com/silent-commit/CLEAR/tree/main/CLEAR-CogVideoX).
+- **[2026-03-24]** We released the [paper](https://arxiv.org/abs/2603.21901) and [model](https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal) for **CLEAR**.
 
 ## 📋 Overview
 
