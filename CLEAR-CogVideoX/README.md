@@ -11,6 +11,12 @@ CogVideoX-2b is originally a **text-to-video** generation model that does not su
 - LoRA model weights (checkpoint)
 - CogVideoX-2b base model weights (download from [HuggingFace](https://huggingface.co/THUDM/CogVideoX-2b))
 
+<p align="center">
+  <a href="https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal-CogvideoX">
+    <img src="https://img.shields.io/badge/🤗 HuggingFace-Model-yellow"/>
+  </a>
+</p>
+
 ---
 
 ## Architecture Modification
