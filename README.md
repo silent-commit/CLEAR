@@ -46,6 +46,9 @@
   ▶ Click to watch the full-resolution MP4
 </p>
 
+## 🔥 News
+
+- **[2026-04-02]** Added support for **CogVideoX**. See the implementation and usage details in [CLEAR-CogVideoX](https://github.com/silent-commit/CLEAR/tree/main/CLEAR-CogVideoX).
 
 ## 📋 Overview
 
