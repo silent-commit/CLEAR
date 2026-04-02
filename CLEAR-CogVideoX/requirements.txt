@@ -1,0 +1,9 @@
+torch>=2.0
+diffusers>=0.31.0
+transformers>=4.44.0
+accelerate>=1.0
+peft>=0.13.0
+decord>=0.6
+opencv-python
+numpy
+tqdm
