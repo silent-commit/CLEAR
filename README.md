@@ -37,6 +37,14 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/ICML%202026-Spotlight-red?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <b>Accepted by ICML 2026 as a Spotlight</b>
+</p>
+
+<p align="center">
   <a href="assets/demo_videos/english1_demo.mp4">
     <img src="assets/demo_videos/english1_demo.gif" width="80%"/>
   </a>
@@ -47,7 +55,7 @@
 </p>
 
 ## 🔥 News
-
+- **[2026-05-01]** CLEAR was accepted by **ICML 2026** as a **Spotlight**.
 - **[2026-04-02]** Added support for **CogVideoX**. See the implementation and usage details in [CLEAR-CogVideoX](https://github.com/silent-commit/CLEAR/tree/main/CLEAR-CogVideoX).
 - **[2026-03-24]** We released the [paper](https://arxiv.org/abs/2603.21901) and [model](https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal) for **CLEAR**.
 
