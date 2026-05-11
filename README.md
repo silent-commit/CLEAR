@@ -41,7 +41,7 @@
 </p>
 
 <p align="center">
-  <b>Accepted by ICML 2026 as a Spotlight</b>
+  <b>🎉Accepted by ICML 2026 as a Spotlight</b>
 </p>
 
 <p align="center">
