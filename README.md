@@ -55,6 +55,7 @@
 </p>
 
 ## 🔥 News
+- **[2026-05-24]** CLEAR was selected as an **Oral Presentation** at **ICML 2026**.
 - **[2026-05-01]** CLEAR was accepted by **ICML 2026** as a **Spotlight**.
 - **[2026-04-02]** Added support for **CogVideoX**. See the implementation and usage details in [CLEAR-CogVideoX](https://github.com/silent-commit/CLEAR/tree/main/CLEAR-CogVideoX).
 - **[2026-03-24]** We released the [paper](https://arxiv.org/abs/2603.21901) and [model](https://huggingface.co/charlesw09/CLEAR-mask-free-video-subtitle-removal) for **CLEAR**.
@@ -316,6 +317,10 @@ This project is built upon the following excellent works:
 - [Wan2.1](https://github.com/Wan-Video/Wan2.1) — Open and advanced large-scale video generative models
 - [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) — Diffusion model training and inference framework
 - [PEFT](https://github.com/huggingface/peft) — Parameter-Efficient Fine-Tuning
+
+## 📌 About
+
+**CLEAR** is a lightweight, end-to-end framework for video subtitle removal, designed for direct mask-free inference. It removes subtitles from videos without requiring external text detection, segmentation, or manually provided masks during inference.
 
 ## ⚖️ License
 
